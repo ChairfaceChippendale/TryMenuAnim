@@ -12,6 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 
+import com.ujujzk.trymenuanim.customView.DropdownMenu;
 import com.ujujzk.trymenuanim.customView.LambdableAnimation;
 import com.ujujzk.trymenuanim.databinding.ActivityMainBinding;
 
@@ -156,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
         ViewGroup parent;
         View child;
 
+        //it needs to avoid space between last menu element and screen bottom
         parent = (ViewGroup) menuViews.get(0);
         child = parent.getChildAt(0);
         parent.setOnClickListener(cl);
