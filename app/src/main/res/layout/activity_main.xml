@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ujujzk.trymenuanim.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menu_cont"
+            android:src="@drawable/mock_map_33"
+            android:scaleType="center"/>
+
+
+        <FrameLayout
+            android:id="@+id/menu_cont"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/menu_1">
+
+            <TextView
+                android:id="@+id/start_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_menu_white_24dp"
+                android:text="Menu"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#03c2ff"
+                android:textSize="24dp"/>
+
+        </FrameLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <FrameLayout
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/menu_1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:drawableLeft="@drawable/ic_help_white_18dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="Help"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/menu_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:drawableLeft="@drawable/ic_settings_white_18dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/menu_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:drawableLeft="@drawable/ic_cloud_upload_white_18dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/menu_4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:drawableLeft="@drawable/ic_map_white_18dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="Map"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/menu_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:drawableLeft="@drawable/ic_person_white_18dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>
