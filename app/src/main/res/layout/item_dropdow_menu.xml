@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/menu_5">
+    android:gravity="center|bottom"
+    tools:background="@color/menu_5">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal|bottom"
-            tools:drawableLeft="@drawable/ic_person_white_18dp"
-            android:drawablePadding="8dp"
-            android:gravity="center"
-            tools:text="Text"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/item_drawable"
+        android:layout_width="36dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/ic_cloud_upload_white_18dp" />
 
-    </FrameLayout>
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Text" />
+
+</LinearLayout>
 
